@@ -1,18 +1,18 @@
-import React from 'react'
+import React from "react";
+import { FaLocationDot } from "react-icons/fa6";
 
 const ChurchAddress = () => {
   return (
-    <div>
-       <p>
-     CHURCH INFORMATION
-146 E Main St, Hopkinton, MA
-In-person & Online at 9 am
-In-person at 10:30 am
-Online at 9 am: Click on “WATCH LIVE” at the top of our website
-       </p>
-       <button>GET DIRECTIONS</button>
-    </div>
-  )
-}
+    <div className="bg-black py-10 text-wrap text-white text-center ">
+        <FaLocationDot className="mx-auto h-10 text-blue-400" />
+      <pre className="">
+        CHURCH INFORMATION <br/>
+       Km 4, Gbogon-Osogbo Road,<br/> P.O Box 1838, Osogbo, Nigeria.
+      </pre>
 
-export default ChurchAddress
+      <button>GET DIRECTIONS</button>
+    </div>
+  );
+};
+
+export default ChurchAddress;
